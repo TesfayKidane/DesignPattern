@@ -18,7 +18,7 @@ public abstract class ATemplateMethod {
     public abstract String[] getOtherHalf(String[] file);
     public abstract void printFullLetter(String[] original, String[] otherHalf);
     
-    public void print(String[] file){
+    public final void print(String[] file){
         String[] letters = Arrays.copyOfRange(file, 5, file.length);
         String[] otherHalf = getOtherHalf(letters);
         printFullLetter(letters, otherHalf);
