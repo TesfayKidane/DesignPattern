@@ -31,6 +31,11 @@ public class Client {
         CallRecord callRecord = new CallRecord(customer, agent, "validate and wash call record", false, false);
         Client client = new Client();
         client.sendRequest(callRecord);
+        
+        // test it if you 
+        address.setCity("");
+        client.sendRequest(callRecord);
+        
     }
     
 }
