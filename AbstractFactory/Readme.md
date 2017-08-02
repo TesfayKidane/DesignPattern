@@ -16,6 +16,7 @@ for the business to easily get packaging instructions and calculate the packagin
 each of the orders. Also provide a client program that prints the packing instructions and 
 the total packaging cost for each gift pack.
 Use the following skeleton code for your implementation.
+```
 public class GiftItem {
 private String giftId;
 private String giftName;
@@ -41,3 +42,4 @@ private String city;
 private String state;
 private String zipcode;
 }
+```
