@@ -15,10 +15,7 @@ import java.util.List;
  */
 public class CarRace {
 
-    private RoadState regularRoadState;
-    private RoadState gravelRoadState;
-    private RoadState wetRoadState;
-    private RoadState iceRoadState;
+ 
     static private List<RoadState> states;
 
     static {
@@ -30,7 +27,7 @@ public class CarRace {
         ));
     }
 
-    private RoadState currentRoadState = regularRoadState;
+    private RoadState currentRoadState = states.get(0);
     private int level = 0;
 
     public CarRace(int level) {
@@ -38,13 +35,7 @@ public class CarRace {
             System.err.print("Level should be between 0 and 3 (inclusive)");
             return;
         }
-        currentRoadState = states.get(level);
-
-        regularRoadState = states.get(0);
-        gravelRoadState = states.get(1);
-        wetRoadState = states.get(2);
-        iceRoadState = states.get(3);
-
+        currentRoadState = states.get(level);     
     }
 
     public void turnLeft() {
