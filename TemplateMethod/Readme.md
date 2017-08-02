@@ -4,6 +4,7 @@ For example, the following files define the letters 'A', 'B' and 'C',
  which represent all 3 cases of symmetry.
 
 VERTICAL NONE HORIZONTAL
+```
 5 9 9
 14 14 8
 10 10 10
@@ -22,7 +23,7 @@ VERTICAL NONE HORIZONTAL
 -++-- -++----++
 -++-- -++---++-
 -++-- -++++++--
-
+```
 The first line defines the symmetry type. The 2nd and the 3rd lines define the numbers of columns and rows, for example,
  in the letter 'A' file there are 5 columns and 14 rows. The 5th and 6th define the size of the complete letter.
  Complete letters are represented with a 10 x 20 matrix. Implement the program using a Template Method pattern to construct/print
