@@ -5,6 +5,7 @@ command line (ConsoleTrace), while another writes them
 to a file (FileTrace). All you want your colleagues to know
 about the tool is
 1) The interface (or what my tool can do for you)
+```
 public interface Trace {
 // turn on and off debugging
 public void setDebug( boolean debug );
@@ -13,6 +14,7 @@ public void debug( String message );
 // write out an error message
 public void error( String message );
 }
+```
 2) How to choose a certain debugger by giving an argument
 to your main(String args[]) method. (for example, use
 “trace.log” to choose the FileTrace implementation or
