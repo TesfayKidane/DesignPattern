@@ -7,6 +7,7 @@ Scenario 4: A Java applet has some very large classes which take a long time for
 these classes so that the applet starts as quickly as possible?
 
 Choice 1: Implement a synchronization proxy discussed in Scenario 3. Suppose the Table class implements the ITable interface
+```
 public interface ITable {
 public int numOfRows();
 public IRow getRow(int rowNum);
@@ -16,3 +17,4 @@ public void deleteRow(int rowNum);
 public interface IRow {
 //the interface a concrete Row class implements ...
 }
+```
