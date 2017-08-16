@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package command;
+package orderprocessing;
 
 /**
  *
  * @author Tesfay
  */
-public interface Command {
-    public void execute(String command);
-    public void undo();
+public enum OrderStatus {
+    FULLY_FILLED, NOT_FULL_FILLED, PARTIALY_FILLED, CANCELED
 }

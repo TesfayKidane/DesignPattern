@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package command;
+package square;
 
 /**
  *
@@ -12,10 +12,10 @@ package command;
 public class Client {
     
     public static void main(String[] args){
-        SquareOperations squareOperations = new SquareOperations();
-        Command createCommand = new CreateSquare(squareOperations);
-        Command scaleCommand = new ScaleSquare(squareOperations);
-        Command moveCommand = new MoveSquare(squareOperations);
+        SquareOperationsReceiver squareOperationsReceiver = new SquareOperationsReceiver();
+        ICommand createCommand = new CreateSquare(squareOperationsReceiver);
+        ICommand scaleCommand = new ScaleSquare(squareOperationsReceiver);
+        ICommand moveCommand = new MoveSquare(squareOperationsReceiver);
         
         SquareOperationsInvoker soi = new SquareOperationsInvoker(createCommand, scaleCommand, moveCommand);
         

@@ -3,23 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package command;
+package square;
 
 /**
  *
  * @author Tesfay
  */
-public class SquareOperations {
+public class SquareOperationsReceiver {
     
-    public void create(String command){
+    public void createSquare(String command){
         System.out.println("Performed commnd : " + command);
     }
     
-    public void scale(String command){
+    public void scaleSquare(String command){
         System.out.println("Performed commnd : " + command);
     }
     
-    public void move(String command){
+    public void moveSquare(String command){
         System.out.println("Performed commnd : " + command);
     }
     

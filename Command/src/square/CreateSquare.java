@@ -3,24 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package command;
+package square;
 
 /**
  *
  * @author Tesfay
  */
-public class ScaleSquare implements Command{
+public class CreateSquare implements ICommand{
 
-    private SquareOperations square;
+    private SquareOperationsReceiver squareOperationReceiver;
 
-    public ScaleSquare(SquareOperations square) {
-        this.square = square;
+    public CreateSquare(SquareOperationsReceiver square) {
+        this.squareOperationReceiver = square;
     }
-    
-    
+   
     @Override
     public void execute(String command) {
-        square.scale(command);
+       squareOperationReceiver.createSquare(command);
     }
 
     @Override

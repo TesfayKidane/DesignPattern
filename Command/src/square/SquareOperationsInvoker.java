@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package command;
+package square;
 
 /**
  *
@@ -11,11 +11,11 @@ package command;
  */
 public class SquareOperationsInvoker {
     
-    private Command createCommand;
-    private Command scaleCommand;
-    private Command moveCommand;
+    private ICommand createCommand;
+    private ICommand scaleCommand;
+    private ICommand moveCommand;
 
-    public SquareOperationsInvoker(Command createCommand, Command scaleCommand, Command moveCommand) {
+    public SquareOperationsInvoker(ICommand createCommand, ICommand scaleCommand, ICommand moveCommand) {
         this.createCommand = createCommand;
         this.scaleCommand = scaleCommand;
         this.moveCommand = moveCommand;
