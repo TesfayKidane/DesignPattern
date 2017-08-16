@@ -5,6 +5,8 @@
  */
 package orderprocessing;
 
+import orderprocessing.command.ITradingGatewayCommand;
+
 /**
  *
  * @author Tesfay

@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package orderprocessing;
+package orderprocessing.domain;
 
 /**
  *
  * @author Tesfay
  */
-public interface ITradingGatewayCommand {
-    public void execute();
+public enum OrderType {
+    BUY, SELL, CANCEL
 }

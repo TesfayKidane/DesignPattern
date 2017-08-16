@@ -3,18 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package orderprocessing;
+package orderprocessing.command;
+
+import orderprocessing.domain.Order;
+import orderprocessing.StockTradidngPlatform;
 
 /**
  *
  * @author Tesfay
  */
-public class CancelTradingGatewayCommand implements ITradingGatewayCommand{
+public class SellTradingGatewayCommand implements ITradingGatewayCommand{
 
     private StockTradidngPlatform sTradingPlatform = new StockTradidngPlatform();
     private Order order;
 
-    public CancelTradingGatewayCommand(Order order) {
+    public SellTradingGatewayCommand(Order order) {
         this.order = order;
     }
 
@@ -25,14 +28,9 @@ public class CancelTradingGatewayCommand implements ITradingGatewayCommand{
     public void setsTradingPlatform(StockTradidngPlatform sTradingPlatform) {
         this.sTradingPlatform = sTradingPlatform;
     }
-    
     @Override
     public void execute() {
-       if(sTradingPlatform.getOrderStatus(order).equals(OrderStatus.NOT_FULL_FILLED)){
-           sTradingPlatform.cancel(order);
-           
-       }
-       
+       sTradingPlatform.sell(order);
     }
     
 }

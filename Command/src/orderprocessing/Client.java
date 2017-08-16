@@ -5,6 +5,14 @@
  */
 package orderprocessing;
 
+import orderprocessing.domain.Order;
+import orderprocessing.domain.OrderStatus;
+import orderprocessing.domain.OrderType;
+import orderprocessing.command.BuyTrdingGatewayCommand;
+import orderprocessing.command.CancelTradingGatewayCommand;
+import orderprocessing.command.SellTradingGatewayCommand;
+import orderprocessing.command.ITradingGatewayCommand;
+
 /**
  *
  * @author Tesfay

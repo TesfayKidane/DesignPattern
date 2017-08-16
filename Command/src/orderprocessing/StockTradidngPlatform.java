@@ -5,6 +5,9 @@
  */
 package orderprocessing;
 
+import orderprocessing.domain.Order;
+import orderprocessing.domain.OrderStatus;
+
 /**
  *
  * @author Tesfay
