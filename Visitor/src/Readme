@@ -1,0 +1,5 @@
+You are developing a library system for a university. All items that students and faculty can check out are books, magazines and research papers. Loan periods for everything are 3 weeks. A fine is charged for each overdue item. Details are listed below:
+Overdue Fines Book/Day Magazine/Day Research Paper Maximum for students $0.10 $0.10 $0.20 $10.00 for faculty $0.10 $0.05 $0.00 $5.00
+You now need to develop the FineCalculator class with the Visitor Pattern. You are also responsible for all other necessary classes/interfaces to make your FineCalculator work.
+1) Draw the UML diagram for all participants in your implementation.
+2) Write Java code that shows all necessary attributes/methods with implementation logic for each participant.
